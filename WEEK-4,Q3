@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class number
+{
+	private:
+		int i,n,p,q;
+		public:
+			number()
+	        {
+	        	i=1;
+	        	n=0;
+	        }
+	        number(int p, int q)
+	        {
+	        	i=p;
+	        	n=q;
+			}
+			void display()
+			{
+				cout<<"enter the number :"<<endl;
+				cin>>n;
+				for(i=1; i<=n; i++)
+				{
+							cout<<" The cube of "<<i<<" is ="<<(i*i*i)<<endl;
+					
+				}
+			}
+			~number()
+			{
+				cout<<" clear :"<<endl;
+			}
+		};
+int main()
+   {
+   	int p,q;
+	number obj(p,q);
+	obj.display();
+	
