@@ -1,0 +1,24 @@
+#include <iostream>    
+using namespace std;    
+class measure {    
+    public:    
+ int volume(int a){      
+        return a * a * a;      
+    }      
+ int volume(int r , int h)      
+    {      
+        return 3.14 * r*r*h  ;    
+    }      
+ int volume(double r)      
+    {      
+        return (4/3)*3.14*r*r*r;      
+    } 
+};     
+int main(void) {    
+    measure m;                                                     
+    cout<<m.volume(10, 20)<<endl;    
+        cout<<m.volume(10)<<endl;   
+            cout<<m.volume(12.5)<<endl;   
+         
+   return 0;    
+}
